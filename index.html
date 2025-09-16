@@ -1,239 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>2328 Lounge</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="nav__header">
-          <div class="nav__logo">
-            <a href="#">
-              <img src="facebook/logo.jpg" alt="2328 logo.png">
-            </a>
-          </div>
-          <div class="nav__menu__btn" id="menu-btn">
-            <i class="ri-menu-3-line"></i>
-          </div>
-        </div>
-        <ul class="nav__links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lounge-hero.css">
+    <link rel="stylesheet" href="our-past.css ">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="vip.css">
+    <link rel="stylesheet" href="testimonial.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="bg">
 
-        </ul>
-      </nav>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
-      <div class="section__container header__container" id="home">
-        <h1>23:28 | YOU KNOW WHAT TIME IT IS</h1>
-        <p>
-          Experience the best lifestyle come alive every night time
-        </p>
-        <div class="header__btns">
-          <button class="btn">Let's Eat</button>
-          <button class="btn">Book a Table</button>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+<canvas id="royal-bg"></canvas>
+
+<header class="navbar" id="nav">
+  <div class="nav-container">
+    <!-- Logo -->
+    <div class="nav-logo">
+  <img src="assets/Royal Logo.png" alt="Royal Palace Logo" id="nav-logo-img">
+</div>
+
+
+    <!-- Center Links -->
+    <nav class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#our-past">Past Events</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+
+      <a href="#gallery">Gallery</a>
+      <a href="#vip">VIP</a>
+      <a href="#testimonials">Testimonials</a>
+    </nav>
+
+    <!-- Right Buttons -->
+    <div class="nav-buttons">
+      <a href="#vip" class="btn-reserve">Reservation</a>
+      <a href="#vip" class="btn-book">Book Venue</a>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+
+
+
+    <section class="hero" id="hero">
+  <!-- Left Image -->
+  <img src="assets/bar.jpg" alt="Club Ambience" class="hero-img left">
+
+  <!-- Center Content -->
+  <div class="hero-center">
+    <p class="hero-top">Exclusive Nights</p>
+    <h1 class="hero-big">
+      <span>Drink</span><br>
+      <span>Dance</span><br>
+      <span>Repeat</span>
+    </h1>
+
+    <div class="circle-wrap">
+      <img src="assets/Royal Logo.png" alt="Club Logo" class="club-logo">
+      <div class="circle-text">The Lounge • Good Vibes Only • VIP Nights •</div>
+    </div>
+
+    <p class="hero-desc">Your new late-night ritual.</p>
+  </div>
+
+  <!-- Right Image -->
+  <img src="assets/taps.jpg" alt="Club Drinks" class="hero-img right">
+</section>
+
+<section class="our-past" id="our-past">
+  <h2 class="section-title">Our Past</h2>
+  <div class="slider">
+    <div class="slider-track">
+      <!-- 10 cards -->
+      <div class="card">
+        <img src="assets/1.jpeg" alt="Event 1">
+        <div class="overlay">
+          <p class="event-name">Summer Nights</p>
+          <a href="#" class="btn-view">View More <span class="arrow">→</span></a>
         </div>
       </div>
-    </header>
 
-    <section class="menu" id="menu">
-      <div class="section__container menu__container">
-        <h2 class="section__header">Popular Menu</h2>
-        <a href="#">
-          View All
-          <i class="ri-arrow-right-long-line"></i>
-        </a>
-        <div class="menu__grid">
-          <div class="menu__card">
-            <img src="assets/1.jpg" alt="Hot Dog" />
-            <div class="menu__card__content">
-              <h4>HOT DOG</h4>
-              <h3>E140.00</h3>
-            </div>
-          </div>
-          <div class="menu__card">
-            <img src="assets/2.jpg" alt="menu" />
-            <div class="menu__card__content">
-              <h4>Sinyaveve</h4>
-              <h3>E240.00</h3>
-            </div>
-          </div>
-          <div class="menu__card">
-            <img src="assets/3.jpg" alt="menu" />
-            <div class="menu__card__content">
-              <h4>Boiled Chicken</h4>
-              <h3>E120.00</h3>
-            </div>
-          </div>
-          <div class="menu__card">
-            <img src="assets/4.jpg" alt="menu" />
-            <div class="menu__card__content">
-              <h4>Inhloko</h4>
-              <h3>E29.00</h3>
-            </div>
-          </div>
+      <div class="card">
+        <img src="assets/2.jpeg" alt="Event 2">
+        <div class="overlay">
+          <p class="event-name">VIP Lounge Party</p>
+          <a href="#" class="btn-view">View More <span class="arrow">→</span></a>
         </div>
       </div>
-    </section>
 
-    <section class="book">
-      <div class="section__container book__container">
-        <form action="/">
-          <h4>Book a Table</h4>
-          <div class="input__row">
-            <div class="input__group">
-              <label for="firstName">FIRST NAME</label>
-              <input type="text" />
-            </div>
-            <div class="input__group">
-              <label for="lastName">LAST NAME</label>
-              <input type="text" />
-            </div>
-          </div>
-          <div class="input__row">
-            <div class="input__group">
-              <label for="date">DATE</label>
-              <input type="date" />
-            </div>
-            <div class="input__group">
-              <label for="person">PERSON</label>
-              <input type="text" />
-            </div>
-          </div>
-          <div class="input__row">
-            <button class="btn" type="submit">BOOK A TABLE</button>
-          </div>
-        </form>
+      <div class="card">
+        <img src="assets/3.jpeg" alt="Event 3">
+        <div class="overlay">
+          <p class="event-name">Deep House Sessions</p>
+          <a href="#" class="btn-view">View More <span class="arrow">→</span></a>
+        </div>
       </div>
-    </section>
 
-    <section class="section__container about__container" id="about">
-      <div class="about__image">
-        <img src="assets/front.jpg" alt="about" />
-      </div>
-      <div class="about__content">
-        <h2 class="section__header">About 23:28</h2>
-        <div>
-          <p>
-           23:28 Lounge is a trendy, vibrant bar and restaurant in Mbabane, situated in the 
-           Checkers Business Park. It’s celebrated for its modern chic décor blended with local artistic 
-           flair. The lounge caters to both locals and tourists, offering an inviting, 
-           lively ambiance ideal for both casual relaxation and nighttime socializing.
-          </p>
-          <p>
-            At 23:28, we believe in making every moment special, whether
-            it's a lunch break or gathering with friends.
-          </p>
-          <div class="about__btn">
-            <button class="btn">READ MORE</button>
-          </div>
+      <div class="card">
+        <img src="assets/4.jpeg" alt="Event 4">
+        <div class="overlay">
+          <p class="event-name">Friday Fever</p>
+          <a href="#" class="btn-view">View More <span class="arrow">→</span></a>
         </div>
       </div>
-    </section>
 
-    <section class="service" id="service">
-      <div class="section__container service__container">
-        <h2 class="section__header">Services We Provide</h2>
-        <div class="service__grid">
-          <div class="service__card">
-            <span>01</span>
-            <h4>Recreation & Concert Events</h4>
-            <p>
-              Our Louge is tailored to provide you the best
-              experience and splended recreational time to make memories.
-            </p>
-          </div>
-          <div class="service__card">
-            <span>02</span>
-            <h4>Lounge & Bar</h4>
-            <p>
-              Perfect for business & pleasure, our Lounge offers private VIP services with catering staff.
-            </p>
-          </div>
-          <div class="service__card">
-            <span>03</span>
-            <h4>Special Menu</h4>
-            <p>
-              delight yourself and friends with our famous special food menu .
-            </p>
-          </div>
-          <div class="service__card">
-            <span>04</span>
-            <h4>Bar</h4>
-            <p>
-              Endulged on your favorite drinks and homemade cocktails 
-            </p>
-          </div>
-          <div class="service__image">
-            <img src="assets/taps.jpg" alt="service" />
-          </div>
+      <div class="card">
+        <img src="assets/5.jpeg" alt="Event 5">
+        <div class="overlay">
+          <p class="event-name">Groove Nights</p>
+          <a href="#" class="btn-view">View More <span class="arrow">→</span></a>
         </div>
       </div>
-    </section>
 
-    <footer>
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <a href="#" class="footer__logo">
-            <img src="facebook/logo.jpg" alt="logo" />
-          </a>
-        </div>
-        <div class="footer__col">
-          <h4>Blogs</h4>
-          <ul class="footer__links">
-            <li>
-              <a href="#">
-                The Art of Perfect Sinyaveve stew: Secrets Behind Our Creations
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                5 Cocktail Pairings to bliss Your Day
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Behind the Scenes: A Night in the Life of 23:28
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>New Items</h4>
-          <ul class="footer__links">
-            <li><a href="#">Menu Highlights</a></li>
-            <li><a href="#">Daily Specials</a></li>
-            <li><a href="#">Customer Testimonials</a></li>
-            <li><a href="#">Baking Workshops</a></li>
-            <li><a href="#">Blog & Recipe</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Social Media</h4>
-          <ul class="footer__links">
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Youtube</a></li>
-            <li><a href="#">LinkedIn</a></li>
-          </ul>
+      <div class="card">
+        <img src="assets/6.jpeg" alt="Event 6">
+        <div class="overlay">
+          <p class="event-name">Retro Vibes</p>
+          <a href="#" class="btn-view">View More <span class="arrow">→</span></a>
         </div>
       </div>
-      <div class="footer__bar">
-        Copyright © 2025 Web Design Mastery. All rights reserved.
-      </div>
-    </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
-  </body>
+      <div class="card">
+        <img src="assets/7.jpeg" alt="Event 7">
+        <div class="overlay">
+          <p class="event-name">Champagne Nights</p>
+          <a href="#" class="btn-view">View More <span class="arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/1.jpeg" alt="Event 8">
+        <div class="overlay">
+          <p class="event-name">Urban Beats</p>
+          <a href="#" class="btn-view">View More <span class="arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/2.jpeg" alt="Event 9">
+        <div class="overlay">
+          <p class="event-name">Neon Glow</p>
+          <a href="#" class="btn-view">View More <span class="arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/3.jpeg" alt="Event 10">
+        <div class="overlay">
+          <p class="event-name">After Hours</p>
+          <a href="#" class="btn-view">View More <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dual-layout" id="about">
+  <div class="images-side">
+    <img src="assets/about.jpg" alt="Event left" class="img-bottom">
+    <img src="assets/about1.jpg" alt="Event right" class="img-top">
+  </div>
+
+  <div class="text-side">
+    <h2>Unforgettable Experiences</h2>
+    <p>
+      From electrifying nights to exclusive moments, we bring people together 
+      for memories that last forever. Join the vibe, feel the energy, 
+      and live the experience. 
+    </p>
+    <a href="#" class="btn">Book Your Night</a>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="section__container menu__container">
+    <h2 class="section__header">Popular Menu</h2>
+    <a href="#">
+      View All
+      <i class="ri-arrow-right-long-line"></i>
+    </a>
+    <div class="menu__grid" id="menuGrid"></div>
+  </div>
+</section>
+
+ <section class="gallery" id="gallery">
+    <div class="gallery__container">
+      <h2 class="section__header">Gallery / Experience</h2>
+      <div class="gallery__grid">
+        <!-- Card 1 -->
+        <div class="gallery__card">
+          <img src="assets/7.jpeg" alt="Event 1">
+          <div class="share">
+            <button class="share-btn"><i class="fa-solid fa-share-nodes"></i></button>
+            <div class="social-icons">
+              <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="li"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="dc"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="gallery__card">
+          <img src="assets/1.jpeg" alt="Event 2">
+          <div class="share">
+            <button class="share-btn"><i class="fa-solid fa-share-nodes"></i></button>
+            <div class="social-icons">
+              <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="li"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="dc"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="gallery__card">
+          <img src="assets/2.jpeg" alt="Event 3">
+          <div class="share">
+            <button class="share-btn"><i class="fa-solid fa-share-nodes"></i></button>
+            <div class="social-icons">
+              <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="li"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="dc"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="gallery__card">
+          <img src="assets/3.jpeg" alt="Event 4">
+          <div class="share">
+            <button class="share-btn"><i class="fa-solid fa-share-nodes"></i></button>
+            <div class="social-icons">
+              <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="li"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="dc"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="gallery__card">
+          <img src="assets/4.jpeg" alt="Event 5">
+          <div class="share">
+            <button class="share-btn"><i class="fa-solid fa-share-nodes"></i></button>
+            <div class="social-icons">
+              <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="li"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="dc"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="gallery__card">
+          <img src="assets/5.jpeg" alt="Event 6">
+          <div class="share">
+            <button class="share-btn"><i class="fa-solid fa-share-nodes"></i></button>
+            <div class="social-icons">
+              <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="li"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="dc"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="gallery__card">
+          <img src="assets/6.jpeg" alt="Event 7">
+          <div class="share">
+            <button class="share-btn"><i class="fa-solid fa-share-nodes"></i></button>
+            <div class="social-icons">
+              <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="li"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="dc"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="gallery__card">
+          <img src="assets/7.jpeg" alt="Event 8">
+          <div class="share">
+            <button class="share-btn"><i class="fa-solid fa-share-nodes"></i></button>
+            <div class="social-icons">
+              <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="li"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="dc"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="vip" id="vip">
+  <div class="vip__container">
+    <!-- Left Side Content -->
+    <div class="vip__content">
+      <h2 class="vip__header">Reserve Your Exclusive VIP Experience</h2>
+      <p class="vip__subheader">
+        Elevate your night with our private lounge. Starting at <span class="vip-price">$,500</span> for a VIP table. Enjoy personalized service, premium cocktails, and unforgettable memories.
+      </p>
+      <form class="vip__form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="date" placeholder="Reservation Date" required>
+        <input type="number" placeholder="Party Size" min="1" required>
+        <input type="tel" placeholder="Contact Number" required>
+        <button type="submit" class="vip__btn">Reserve My Table</button>
+      </form>
+      <p class="vip__perks">
+        Complimentary champagne, private lounge, and personalized VIP service included.
+      </p>
+    </div>
+    <!-- Right Side Image -->
+    <div class="vip__image">
+      <img src="assets/guest-card.jpg" alt="VIP Lounge">
+      <!-- Floating luxury animation (sparks / particles) -->
+      <div class="vip__spark vip__spark1"></div>
+      <div class="vip__spark vip__spark2"></div>
+      <div class="vip__spark vip__spark3"></div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="testimonials__container">
+    <h2 class="section__header">What Our Guests Say</h2>
+    <div class="testimonial__carousel">
+      <!-- Slide 1 -->
+      <div class="testimonial__card">
+        <p class="testimonial__quote">"An unforgettable experience! The VIP table and service made our night truly magical."</p>
+        <h4 class="testimonial__name">— Alex Thompson</h4>
+      </div>
+      <!-- Slide 2 -->
+      <div class="testimonial__card">
+        <p class="testimonial__quote">"The ambiance is unmatched. Drinks, music, and service were perfect. Highly recommend!"</p>
+        <h4 class="testimonial__name">— Priya Kapoor</h4>
+      </div>
+      <!-- Slide 3 -->
+      <div class="testimonial__card">
+        <p class="testimonial__quote">"I’ve visited many lounges, but this is next-level luxury. I’m a regular now!"</p>
+        <h4 class="testimonial__name">— Marcus Lee</h4>
+      </div>
+      <!-- Slide 4 -->
+      <div class="testimonial__card">
+        <p class="testimonial__quote">"Absolutely worth every penny. The VIP experience felt like a private club for royalty."</p>
+        <h4 class="testimonial__name">— Sofia Ramirez</h4>
+      </div>
+    </div>
+    <div class="testimonial__controls">
+      <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+<section class="cta-footer">
+  <div class="cta-footer__container">
+    <!-- CTA Section -->
+    <div class="cta-footer__content">
+      <h2 class="cta-footer__header">Reserve Your Royal Experience Tonight</h2>
+      <p class="cta-footer__subheader">
+        Don’t miss your chance to enjoy an exclusive VIP lounge experience. Personalized service, premium cocktails, and unforgettable memories await.
+      </p>
+      <button class="cta-footer__btn">Reserve Now</button>
+    </div>
+    <!-- Floating particles -->
+    <div class="cta-footer__particles">
+      <div class="particle particle1"></div>
+      <div class="particle particle2"></div>
+      <div class="particle particle3"></div>
+      <div class="particle particle4"></div>
+      <div class="particle particle5"></div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer__container">
+      <!-- Left Socials -->
+      <div class="footer__socials footer__socials-left">
+        <a href="#" class="social fb"><i class="ri-facebook-fill"></i></a>
+        <a href="#" class="social ig"><i class="ri-instagram-fill"></i></a>
+      </div>
+
+      <!-- Center Logo -->
+      <div class="footer__logo">
+        <img src="assets/Royal Logo.png" alt="Majestic Lounge Logo">
+      </div>
+
+      <!-- Right Socials -->
+      <div class="footer__socials footer__socials-right">
+        <a href="#" class="social x"><i class="ri-twitter-fill"></i></a>
+        <a href="#" class="social yt"><i class="ri-youtube-fill"></i></a>
+      </div>
+
+      <!-- Copyright -->
+      <p class="footer__copyright">
+        © 2025 Majestic Lounge. All Rights Reserved. <br>
+        Built by <a href="https://rstsealed.com" target="_blank" class="rst-sealed">RST Sealed</a>
+      </p>
+    </div>
+  </footer>
+</section>
+
+
+
+
+<!-- Add Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+
+<script>
+  async function loadMenu() {
+    try {
+      const res = await fetch("menu.json");
+      const menuItems = await res.json();
+
+      const menuGrid = document.getElementById("menuGrid");
+      menuGrid.innerHTML = "";
+
+      menuItems.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "menu__card";
+
+        card.innerHTML = `
+          <img src="${item.img}" alt="${item.name}" />
+          <div class="menu__card__content">
+            <h4>${item.name}</h4>
+            <h3>$${item.price.toFixed(2)}</h3>
+          </div>
+        `;
+        menuGrid.appendChild(card);
+      });
+    } catch (err) {
+      console.error("Error loading menu:", err);
+    }
+  }
+
+  loadMenu();
+</script>
+
+<script src="lounge-hero.js"></script>
+<script src="our-past.js"></script>
+<script src="gallery.js"></script>
+<script src="vip.js"></script>
+<script src="testimonials.js"></script>
+<script src="footer.js"></script>
+<script src="nav.js"></script>
+<script src="bg"></script>
+<script src="about.js"></script>
+</body>
 </html>
