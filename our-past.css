@@ -1,0 +1,85 @@
+.our-past {
+  background: #06222e;
+  color: white;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(250px * 20); /* 10 cards duplicated */
+  animation: scroll 25s linear infinite;
+}
+
+.slider:hover .slider-track {
+  animation-play-state: paused;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 05%; /* still 5 per viewport */
+  height: 380px; /* reduced size */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  text-align: left;
+}
+
+.event-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.btn-view {
+  display: inline-flex;
+  align-items: center;
+  color: #00ff66;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-view .arrow {
+  display: inline-block;
+  margin-left: 6px;
+  transition: margin-left 0.3s ease;
+}
+
+.btn-view:hover .arrow {
+  margin-left: 15px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0);}
+  100% { transform: translateX(-50%);} /* half because we duplicate cards */
+}
